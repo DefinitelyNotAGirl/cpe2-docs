@@ -1,0 +1,13 @@
+#pragma cpl 0
+
+class data_t:
+	public u64 member1;
+	public u64 member2;
+	public u32 member3;
+
+(0x1000) data_t data;
+
+void main()
+{
+	data.member1 = 0x1000;								
+}

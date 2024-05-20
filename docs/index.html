@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>C+=2 Language Documentation</title>
+	<link rel="stylesheet" href="master.css">
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body onload="loadSharedContent();">
+	<div id="header"></div>
+	<div id="content"><div id="ctwrapper" style="padding-bottom: 50px;">
+<!--
+, ███████ ██   ██  ██████ ███████ ██████  ████████ ██  ██████  ███    ██ ███████
+, ██       ██ ██  ██      ██      ██   ██    ██    ██ ██    ██ ████   ██ ██
+, █████     ███   ██      █████   ██████     ██    ██ ██    ██ ██ ██  ██ ███████
+, ██       ██ ██  ██      ██      ██         ██    ██ ██    ██ ██  ██ ██      ██
+, ███████ ██   ██  ██████ ███████ ██         ██    ██  ██████  ██   ████ ███████
+-->
+		<div class="index-vline" id="index-vline-0"></div>
+		<div class="index-section-title" id="index-section-title-0">Exceptions
+			<br><div class="index-section-desc">C+=2 has <span style="color: crimson;">Fast Exceptions</span> using try,catch and throw</div>
+		</div>
+		<div class="index-vline" id="index-vline-1"></div>
+		<div class="index-code anim-hscroll">
+			<img class="index-code image" src="../media/code/exceptions-c++">
+			<div class="index-code title" style="left: 720px;">Less of this</div>
+		</div>
+		<div class="index-vline" id="index-vline-2"></div>
+		<div class="index-code anim-hscroll">
+			<img class="index-code image" src="../media/code/exceptions-c2">
+			<div class="index-code title" style="left: 720px;">More of this</div>
+		</div>
+<!--
+, ██       ██████  ██     ██     ██      ███████ ██    ██ ███████ ██
+, ██      ██    ██ ██     ██     ██      ██      ██    ██ ██      ██
+, ██      ██    ██ ██  █  ██     ██      █████   ██    ██ █████   ██
+, ██      ██    ██ ██ ███ ██     ██      ██       ██  ██  ██      ██
+, ███████  ██████   ███ ███      ███████ ███████   ████   ███████ ███████
+-->
+		<div class="index-vline" id="index-vline-3"></div>
+		<div class="index-section-title" id="index-section-title-1">Low level
+			<br><div class="index-section-desc">C+=2 offers <span style="color: #5533FF;">low-level</span> control</div>
+		</div>
+		<div class="index-vline" id="index-vline-4"></div>
+		<div class="index-code anim-hscroll">
+			<img class="index-code image" src="../media/code/low-level-control-regs">
+			<div class="index-code title" style="left: 330px;">easily access control registers</div>
+		</div>
+		<div class="index-vline" id="index-vline-5"></div>
+		<div class="index-code anim-hscroll">
+			<img class="index-code image" src="../media/code/memory-absolute">
+			<div class="index-code title" style="left: 480px;">absolute memory addressing</div>
+		</div>
+<!--
+, ███████ ██   ██ ████████ ███████ ███    ██ ██████   █████  ██████  ██      ███████
+, ██       ██ ██     ██    ██      ████   ██ ██   ██ ██   ██ ██   ██ ██      ██
+, █████     ███      ██    █████   ██ ██  ██ ██   ██ ███████ ██████  ██      █████
+, ██       ██ ██     ██    ██      ██  ██ ██ ██   ██ ██   ██ ██   ██ ██      ██
+, ███████ ██   ██    ██    ███████ ██   ████ ██████  ██   ██ ██████  ███████ ███████
+-->
+		<div class="index-vline" id="index-vline-6"></div>
+		<div class="index-section-title" id="index-section-title-1">Extendable
+			<br><div class="index-section-desc">C+=2 provides a <span style="color: #00FFFFFF;">compiler extension</span> interface</div>
+		</div>
+		<div class="index-vline" id="index-vline-7"></div>
+		<div class="index-box anim-hscroll">
+			<div class="index-box-title">ORM</div>
+			Compiler extensions could be used to provide ORM capabilities that involve next to 0 runtime overhead
+		</div>
+		<div class="index-vline" id="index-vline-8"></div>
+		<div class="index-box anim-hscroll">
+			<div class="index-box-title">Documentation</div>
+			Compiler extensions could be used to generate documentation at compile time 
+			using all the information available to the compiler that 3rd party software such as doxygen
+			can't easily get it's hands on
+		</div>
+<!--
+,  ██████  ██████  ███    ███ ██████   █████  ████████ ██ ██████  ██ ██      ██ ████████ ██    ██
+, ██      ██    ██ ████  ████ ██   ██ ██   ██    ██    ██ ██   ██ ██ ██      ██    ██     ██  ██
+, ██      ██    ██ ██ ████ ██ ██████  ███████    ██    ██ ██████  ██ ██      ██    ██      ████
+, ██      ██    ██ ██  ██  ██ ██      ██   ██    ██    ██ ██   ██ ██ ██      ██    ██       ██
+,  ██████  ██████  ██      ██ ██      ██   ██    ██    ██ ██████  ██ ███████ ██    ██       ██
+-->
+		<div class="index-vline" id="index-vline-9"></div>
+		<div class="index-section-title" id="index-section-title-1">Compatibility
+			<br><div class="index-section-desc">C+=2 has limited <span style="color: #00ff75">compatiblity with C/C++ and Rust</span></div>
+		</div>
+		<div class="index-vline" id="index-vline-10"></div>
+		<div class="index-box anim-hscroll">
+			<div class="index-box-title">Name mangling</div>
+			The mangling attribute allows the programmer to specify how the name of a function or variable should be mangled. 
+			For example, using the <span class="code keyword c+=2">mangling-c++</span> attribute on a function 
+			makes the compiler mangle the function's name the same way 
+			a C++ compiler would, enabling seamless linking between C+=2 and C++ code without any cumbersome workarounds.
+		</div>
+		<div class="index-vline" id="index-vline-11"></div>
+		<div class="index-box anim-hscroll">
+			<div class="index-box-title">Header generation</div>
+			The aforementioned compiler extensions can generate C/C++ headers at compile time,
+			enabling automatic translation of data-structure definitions to other languages 
+			and ensuring they stay updated.
+		</div>
+<!--
+,  ██████  ██    ██ ██  ██████ ██   ██ ███████ ████████  █████  ██████  ████████
+, ██    ██ ██    ██ ██ ██      ██  ██  ██         ██    ██   ██ ██   ██    ██
+, ██    ██ ██    ██ ██ ██      █████   ███████    ██    ███████ ██████     ██
+, ██ ▄▄ ██ ██    ██ ██ ██      ██  ██       ██    ██    ██   ██ ██   ██    ██
+,  ██████   ██████  ██  ██████ ██   ██ ███████    ██    ██   ██ ██   ██    ██
+,     ▀▀
+-->
+		<div class="index-vline" id="index-vline-12"></div>
+		<div class="index-box anim-hscroll" id="index-box-bottom">
+			<a href="./quickstart.html" target="_blank"><div class="index-box-title">Getting Started</div></a>
+		</div>
+	</div></div>
+</body>
+</html>
+<script src="index.js"></script>

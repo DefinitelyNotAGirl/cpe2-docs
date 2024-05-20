@@ -1,0 +1,209 @@
+:root {
+
+	--background_0: hsla(var(--color-background-base), 15%,  5%, 100%);
+	--background_1: hsla(var(--color-background-base), 15%, 10%,  20%);
+	--background_2: hsla(var(--color-background-base), 15%,  8%,  20%);
+	--sidebar-width: 0vw;
+}
+
+#content {
+	top: 0vh;
+	min-height: calc(100vh);
+	max-height: calc(100vh);
+}
+
+#header {
+	backdrop-filter: blur(10px); /* Apply Gaussian blur */
+	background-color: var(--background_2);
+	position: absolute;
+	z-index: 1000;
+}
+
+@keyframes index-bob {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-2px);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+/*
+.index-code, .index-box, .index-section-title {
+	animation: index-bob 1s 0s infinite;
+}
+*/
+
+.index-vline {
+	position: relative;
+	margin-left: 10vw;
+	width: 5px;
+	z-index: 0;
+	box-shadow: 0 0 50px 10px;
+}
+
+.index-section-title {
+	position: relative;
+	margin-left: 10vw;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bolder;
+	font-size: 30px;
+	height: 30px;
+	overflow: visible;
+}
+
+.index-section-desc {
+	padding-left: 2vw;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: normal;
+	font-size: 50px;
+	width: 35vw;
+}
+
+.index-box {
+	background: var(--background_1);
+	border-radius: 24px;
+	padding: 50px;
+	width: 35vw;
+	backdrop-filter: blur(10px); /* Apply Gaussian blur */
+	font-size: 20px;
+}
+
+.index-box-title {
+	z-index: 2;
+	font-size: 30px;
+	text-shadow: 0 0 10px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.anim-hscroll {
+	transition: 0.5s;
+}
+
+.index-code {
+	position: relative;
+	margin-top: -50px;
+	margin-bottom: -50px;
+	z-index: 1;
+}
+
+.index-code.title {
+	position: absolute;
+	left: 500px;
+	top: 80px;
+	z-index: 2;
+	font-size: 30px;
+	text-shadow: 0 0 10px;
+}
+.index-code.image {
+	z-index: 1;
+	margin-left: -4vw;
+}
+
+/*
+, ███████ ██   ██  ██████ ███████ ██████  ████████ ██  ██████  ███    ██ ███████
+, ██       ██ ██  ██      ██      ██   ██    ██    ██ ██    ██ ████   ██ ██
+, █████     ███   ██      █████   ██████     ██    ██ ██    ██ ██ ██  ██ ███████
+, ██       ██ ██  ██      ██      ██         ██    ██ ██    ██ ██  ██ ██      ██
+, ███████ ██   ██  ██████ ███████ ██         ██    ██  ██████  ██   ████ ███████
+*/
+
+#index-vline-0 {
+	background: linear-gradient(to top, crimson, #00000000);
+	color: crimson;
+	height: 500px;
+}
+#index-vline-1 {
+	background: linear-gradient(to bottom, crimson, #00000000);
+	color: crimson;
+	height: 700px;
+}
+#index-vline-2 {
+	background: linear-gradient(to bottom, #00000000, crimson, #00000000);
+	color: crimson;
+	height: 700px;
+}
+
+/*
+, ██       ██████  ██     ██     ██      ███████ ██    ██ ███████ ██
+, ██      ██    ██ ██     ██     ██      ██      ██    ██ ██      ██
+, ██      ██    ██ ██  █  ██     ██      █████   ██    ██ █████   ██
+, ██      ██    ██ ██ ███ ██     ██      ██       ██  ██  ██      ██
+, ███████  ██████   ███ ███      ███████ ███████   ████   ███████ ███████
+*/
+
+#index-vline-3 {
+	background: linear-gradient(to bottom, #00000000, crimson, #5533FFFF);
+	color: color-mix(in srgb, #5533FFFF 50%, crimson);
+	height: 800px;
+}
+#index-vline-4 {
+	background: linear-gradient(to bottom, #5533FFFF, #00000000);
+	color: #5533FFFF;
+	height: 400px;
+}
+#index-vline-5 {
+	background: linear-gradient(to bottom, #00000000, #5533FFFF, #00000000);
+	color: #5533FFFF;
+	height: 700px;
+}
+
+/*
+, ███████ ██   ██ ████████ ███████ ███    ██ ██████   █████  ██████  ██      ███████
+, ██       ██ ██     ██    ██      ████   ██ ██   ██ ██   ██ ██   ██ ██      ██
+, █████     ███      ██    █████   ██ ██  ██ ██   ██ ███████ ██████  ██      █████
+, ██       ██ ██     ██    ██      ██  ██ ██ ██   ██ ██   ██ ██   ██ ██      ██
+, ███████ ██   ██    ██    ███████ ██   ████ ██████  ██   ██ ██████  ███████ ███████
+*/
+#index-vline-6 {
+	background: linear-gradient(to bottom, #00000000, #5533FFFF,#00FFFFFF);
+	color: color-mix(in srgb, #00FFFFFF 50%, #5533FFFF);
+	height: 800px;
+}
+#index-vline-7 {
+	background: linear-gradient(to bottom, #00FFFFFF, #00000000);
+	color: #00FFFFFF;
+	height: 400px;
+}
+#index-vline-8 {
+	background: linear-gradient(to bottom, #00FFFFFF, #00000000);
+	color: #00FFFFFF;
+	height: 400px;
+}
+/*
+,  ██████  ██████  ███    ███ ██████   █████  ████████ ██ ██████  ██ ██      ██ ████████ ██    ██
+, ██      ██    ██ ████  ████ ██   ██ ██   ██    ██    ██ ██   ██ ██ ██      ██    ██     ██  ██
+, ██      ██    ██ ██ ████ ██ ██████  ███████    ██    ██ ██████  ██ ██      ██    ██      ████
+, ██      ██    ██ ██  ██  ██ ██      ██   ██    ██    ██ ██   ██ ██ ██      ██    ██       ██
+,  ██████  ██████  ██      ██ ██      ██   ██    ██    ██ ██████  ██ ███████ ██    ██       ██
+*/
+#index-vline-9 {
+	background: linear-gradient(to bottom, #00000000, #00FFFFFF, #00FF75FF);
+	color: color-mix(in srgb, #00FFFFFF 50%, #00FF75);
+	height: 800px;
+}
+#index-vline-10 {
+	background: linear-gradient(to bottom, #00FF75FF, #00000000);
+	color: #00FF75FF;
+	height: 400px;
+}
+#index-vline-11 {
+	background: linear-gradient(to bottom, #00FF75FF, #00000000);
+	color: #00FF75FF;
+	height: 400px;
+}
+/*
+, ██████   ██████  ████████ ████████  ██████  ███    ███     ██      ██ ███    ██ ██   ██ ███████
+, ██   ██ ██    ██    ██       ██    ██    ██ ████  ████     ██      ██ ████   ██ ██  ██  ██
+, ██████  ██    ██    ██       ██    ██    ██ ██ ████ ██     ██      ██ ██ ██  ██ █████   ███████
+, ██   ██ ██    ██    ██       ██    ██    ██ ██  ██  ██     ██      ██ ██  ██ ██ ██  ██       ██
+, ██████   ██████     ██       ██     ██████  ██      ██     ███████ ██ ██   ████ ██   ██ ███████
+*/
+#index-vline-12 {
+	background: linear-gradient(to bottom, #00000000, #00FF75FF, #FFFFFFFF);
+	color: color-mix(in srgb, #FFFFFF 50%, #00FF75);
+	height: 800px;
+}
